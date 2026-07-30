@@ -5,20 +5,24 @@ import streamlit as st
 CSS = """
 <style>
 :root {
-  --northstar-ink: #172033;
-  --northstar-muted: #556176;
-  --northstar-surface: #f7f8fb;
-  --northstar-border: #d9deea;
-  --northstar-accent: #2457c5;
+  --northstar-ink: var(--text-color);
+  --northstar-muted: var(--text-color);
+  --northstar-surface: var(--secondary-background-color);
+  --northstar-border: color-mix(
+    in srgb,
+    var(--text-color) 24%,
+    var(--background-color)
+  );
+  --northstar-accent: var(--primary-color);
 }
-.stApp { color: var(--northstar-ink); }
 [data-testid="stSidebar"] { border-right: 1px solid var(--northstar-border); }
 .simulator-badge {
   display: inline-block;
   padding: .3rem .65rem;
   border-radius: 999px;
-  background: #eaf0ff;
-  color: #173f96;
+  background: var(--northstar-surface);
+  color: var(--northstar-ink);
+  border: 1px solid var(--northstar-accent);
   font-weight: 700;
   font-size: .85rem;
   margin-bottom: .75rem;
@@ -28,14 +32,20 @@ CSS = """
   border-radius: .75rem;
   display: grid;
   place-items: center;
-  background: linear-gradient(145deg, #edf1f8, #dfe7f5);
-  color: #29466f;
+  background: linear-gradient(
+    145deg,
+    var(--northstar-surface),
+    var(--background-color)
+  );
+  color: var(--northstar-ink);
+  border: 1px solid var(--northstar-border);
   font-size: 2.5rem;
 }
 .price-total {
   padding: .9rem 1rem;
   border-radius: .65rem;
   background: var(--northstar-surface);
+  color: var(--northstar-ink);
   border: 1px solid var(--northstar-border);
 }
 @media (max-width: 640px) {
