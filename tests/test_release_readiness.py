@@ -108,11 +108,13 @@ def test_report_and_fixture_privacy_release_audit() -> None:
         assert forbidden.casefold() not in report.casefold()
 
 
-def test_documentation_placeholders_and_required_files() -> None:
+def test_publication_links_screenshots_and_required_files() -> None:
     readme = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
-    assert "[PHASE_7_LIVE_DEMO_URL]" in readme
-    assert "[PHASE_7_SOURCE_REPOSITORY_URL]" in readme
-    assert "https://github.com/" not in readme
+    assert "[PHASE_7_" not in readme
+    assert (
+        "https://woocommerce-storefront-security-hardening-p9d7t7mkrclous9etglr.streamlit.app/"
+    ) in readme
+    assert "https://github.com/promiseibehdev/woocommerce-storefront-security-hardening" in readme
     required = (
         "docs/ARCHITECTURE.md",
         "docs/TESTING.md",
@@ -124,6 +126,15 @@ def test_documentation_placeholders_and_required_files() -> None:
         ".github/workflows/quality.yml",
         ".gitignore",
         "LICENSE",
+        "docs/screenshots/store-home.png",
+        "docs/screenshots/shop.png",
+        "docs/screenshots/product-details.png",
+        "docs/screenshots/checkout.png",
+        "docs/screenshots/security-overview.png",
+        "docs/screenshots/components.png",
+        "docs/screenshots/findings.png",
+        "docs/screenshots/hardening.png",
+        "docs/screenshots/reports.png",
     )
     assert all((PROJECT_ROOT / relative).is_file() for relative in required)
 

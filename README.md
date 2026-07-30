@@ -15,11 +15,8 @@ hardening workspace.
 
 ## Links
 
-- **Live demo:** `[PHASE_7_LIVE_DEMO_URL]`
-- **Source repository:** `[PHASE_7_SOURCE_REPOSITORY_URL]`
-
-These explicit placeholders will be replaced only after Phase 7 publication. No public
-deployment or repository is claimed in this release candidate.
+- **Live demo:** [Open the Streamlit application](https://woocommerce-storefront-security-hardening-p9d7t7mkrclous9etglr.streamlit.app/)
+- **Source repository:** [View on GitHub](https://github.com/promiseibehdev/woocommerce-storefront-security-hardening)
 
 ## What this project demonstrates
 
@@ -162,23 +159,25 @@ The app needs no secrets.
 
 ## Screenshots
 
-Real release screenshots are planned for Phase 7:
+All images below are real captures from the verified live Streamlit deployment.
 
-- `docs/screenshots/store-home-shop.webp`
-- `docs/screenshots/product-details.webp`
-- `docs/screenshots/checkout-simulation.webp`
-- `docs/screenshots/security-overview.webp`
-- `docs/screenshots/components-findings.webp`
-- `docs/screenshots/hardening-reports.webp`
+![Fictional Northstar storefront home with featured products](docs/screenshots/store-home.png)
 
-No mock, AI-generated, or final localhost screenshot is included in this release candidate.
-See [Screenshot Plan](docs/screenshots/README.md).
+![Fictional product details with related catalogue items](docs/screenshots/product-details.png)
 
-## Deployment plan
+![Simulated checkout with the no-real-payment warning](docs/screenshots/checkout.png)
 
-Phase 7 will publish the independent repository and deploy `app.py` to Streamlit Community
-Cloud from `main` using Python 3.12 and empty secrets. See
-[Deployment](docs/DEPLOYMENT.md). Nothing is deployed in Phase 6.
+![Educational security overview with before-and-after scores](docs/screenshots/security-overview.png)
+
+Additional live captures: [Shop](docs/screenshots/shop.png),
+[Components](docs/screenshots/components.png), [Findings](docs/screenshots/findings.png),
+[Hardening](docs/screenshots/hardening.png), and [Reports](docs/screenshots/reports.png).
+
+## Deployment
+
+The public demo deploys `app.py` from `main` to Streamlit Community Cloud using Python
+3.12, no secrets, and no external application services. See
+[Deployment](docs/DEPLOYMENT.md).
 
 ## Known limitations
 
@@ -193,8 +192,7 @@ Cloud from `main` using Python 3.12 and empty secrets. See
 ## Portfolio context
 
 This project demonstrates ecommerce domain engineering and practical security-hardening
-communication in one recruiter-friendly application. Phase 7 will update the existing
-portfolio entry only after the live demo and source URLs are verified.
+communication in one recruiter-friendly application.
 
 ## License
 

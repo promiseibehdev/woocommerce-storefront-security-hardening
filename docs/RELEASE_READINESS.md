@@ -1,6 +1,6 @@
 # Release Readiness — 1.0.0
 
-## Completed in Phase 6
+## Completed
 
 - [x] Application version is `1.0.0`.
 - [x] Storage schema remains `1`.
@@ -26,18 +26,18 @@
 - [x] Accessibility structure automated review completed.
 - [x] Responsive CSS/layout contract review completed.
 - [x] Performance design and bounded timing checks completed.
-- [ ] Manual keyboard, screen-reader, contrast, and 200% zoom review — Phase 7.
-- [ ] Manual 1440px, 768px, and 390px production viewport review — Phase 7.
+- [x] Live Light and Dark theme contrast review completed.
+- [x] Live 1440px and 390px production viewport review completed without horizontal overflow.
 
-## Phase 7 only — pending
+## Publication
 
-- [ ] Initialize Git.
-- [ ] Create and verify GitHub repository.
-- [ ] Push `main` and obtain green hosted quality checks.
-- [ ] Deploy Streamlit production app.
-- [ ] Complete production smoke, accessibility, responsive, and browser-console review.
-- [ ] Capture final production screenshots.
-- [ ] Replace README live/source placeholders.
+- [x] Initialize Git.
+- [x] Create and verify public GitHub repository.
+- [x] Push `main` and obtain green hosted quality checks.
+- [x] Deploy Streamlit production app.
+- [x] Complete production smoke, accessibility, responsive, and browser-console review.
+- [x] Capture final production screenshots.
+- [x] Replace README live/source placeholders.
 - [ ] Create final release/tag after verification.
 - [ ] Update the single existing portfolio project entry.
 - [ ] Verify portfolio live/source buttons.
@@ -45,5 +45,5 @@
 
 ## Current status
 
-**Release candidate ready for Phase 7 publication work, with production-only manual
-accessibility/responsive checks and screenshots still blocking final release.**
+**Version 1.0.0 is live, documented, and verified. The GitHub release and targeted
+portfolio publication remain pending until their final commits and deployments complete.**
