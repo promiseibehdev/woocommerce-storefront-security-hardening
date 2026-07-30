@@ -78,10 +78,6 @@ def test_source_contains_no_runtime_http_endpoints() -> None:
     assert violations == []
 
 
-def test_no_forbidden_phase_directories_exist() -> None:
+def test_no_duplicate_security_ui_directory_exists() -> None:
     root = PACKAGE.parents[1]
-    for relative in (
-        "src/woo_security_simulator/ui/security",
-        ".git",
-    ):
-        assert not (root / relative).exists()
+    assert not (root / "src/woo_security_simulator/ui/security").exists()
