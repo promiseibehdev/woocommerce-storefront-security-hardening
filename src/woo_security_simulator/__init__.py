@@ -1,0 +1,19 @@
+"""Domain foundation for the WooCommerce security engineering simulator."""
+
+from .metadata import (
+    APPLICATION_NAME,
+    APPLICATION_VERSION,
+    DOMAIN_SCHEMA_VERSION,
+    FICTIONAL_STORE_NAME,
+    SECURITY_METHODOLOGY_VERSION,
+    SIMULATION_NOTICE,
+)
+
+__all__ = [
+    "APPLICATION_NAME",
+    "APPLICATION_VERSION",
+    "DOMAIN_SCHEMA_VERSION",
+    "FICTIONAL_STORE_NAME",
+    "SECURITY_METHODOLOGY_VERSION",
+    "SIMULATION_NOTICE",
+]
